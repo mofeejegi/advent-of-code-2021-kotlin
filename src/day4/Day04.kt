@@ -55,14 +55,14 @@ private fun checkBingo(index: Int, list: List<Int>): Boolean {
     return false
 }
 
-private fun calculateScore(index: Int, lastIndex: Int): Int {
+private fun calculateScore(index: Int, numbersListLastIndex: Int): Int {
     val row1 = boards[index]
     val row2 = boards[index + 1]
     val row3 = boards[index + 2]
     val row4 = boards[index + 3]
     val row5 = boards[index + 4]
 
-    val list = numbers.subList(0, lastIndex)
+    val list = numbers.subList(0, numbersListLastIndex)
     val last = list.last()
 
 //    println("Index: $index")
